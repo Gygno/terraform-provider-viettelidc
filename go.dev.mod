@@ -4,6 +4,7 @@ go 1.23.2
 
 require (
 	github.com/hashicorp/terraform-plugin-framework v1.13.0
+	github.com/hashicorp/terraform-plugin-framework-validators v0.15.0
 	github.com/hashicorp/terraform-plugin-go v0.25.0
 	github.com/hashicorp/terraform-plugin-log v0.9.0
 	github.com/hashicorp/terraform-plugin-testing v1.10.0
@@ -11,6 +12,10 @@ require (
 	github.com/viettelidc-provider/viettelidc-api-client-go/service/iam v1.0.0
 	github.com/viettelidc-provider/viettelidc-api-client-go/service/voks v1.0.0
 )
+
+replace github.com/viettelidc-provider/viettelidc-api-client-go => ../viettelidc-api-client-go
+replace github.com/viettelidc-provider/viettelidc-api-client-go/service/iam => ../viettelidc-api-client-go/service/iam
+replace github.com/viettelidc-provider/viettelidc-api-client-go/service/voks => ../viettelidc-api-client-go/service/voks
 
 require (
 	github.com/ProtonMail/go-crypto v1.1.0-alpha.2 // indirect
