@@ -19,9 +19,8 @@ var (
 	providerConfig = `
 provider "viettelidc" {
   domain_id = "9e9480cc-96aa-446e-b08b-5cd7b2f438ab"
-  username = "iac"
-  password = "Vtdc@12345"
-  mfa_code = 123456
+  username = "test-iac"
+  password = "Vtdc@2024"
 }
 `
 	testAccProtoV6ProviderFactories = map[string]func() (tfprotov6.ProviderServer, error){
